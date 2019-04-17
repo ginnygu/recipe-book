@@ -3,7 +3,7 @@ import React from  'react';
 function Recipe(props){
     return(
         <div>
-            <p>{props.recipe.ingredients[1]}</p>
+            {console.log(props.recipe.ingredient)}
         </div>
     )
 }
