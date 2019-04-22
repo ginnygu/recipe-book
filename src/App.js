@@ -31,7 +31,7 @@ class App extends Component {
     fetchRecipe(id)
       .then((data) => {
         (
-          this.setState({ recipe: data.recipe })
+          this.setState({ recipe: [data.recipe] })
         )
       })
   }

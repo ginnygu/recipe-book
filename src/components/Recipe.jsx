@@ -3,7 +3,12 @@ import React from  'react';
 function Recipe(props){
     return(
         <div>
-            {console.log(props.recipe.ingredient)}
+            {props.recipe.map(element => 
+                <div>
+                    <h1>{element.title}</h1>
+                    {element.ingredients.map((ingredient) =>(<li key= {ingredient.toString()}>{ingredient}</li>))}
+                </div>              
+            )}
         </div>
     )
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+// import ListOfRecipes from './ListOfRecipes';
 function Search(props){
     return(
         <div>
